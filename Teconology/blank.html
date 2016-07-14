@@ -1445,6 +1445,19 @@
 												<div class="widget-main no-padding">
 												   <div class="panel-body lead">
                                                    C++ 通过调用函数的方法实现系统特殊路径获取，使用的函数是：获取指定的系统路径 SHGetSpecialFolderPath 
+
+                                                   <p>#include "shlobj.h">" </p></br>
+                                                   <p>#include "Knownfolders.h" </p></br>
+                                                   <p>#include "iostream" </p></br>
+                                                   <p>using namespace std; </p></br>
+                                                   <p>#pragma   comment(lib,   "shell32.lib") </p> </br> 
+                                                   <p>int main(int argc, char const *argv[]) </p></br>
+                                                   <p> {</p></br>
+                                                   <p> 	TCHAR   szPath[MAX_PATH];</p></br>
+                                                   <p>   SHGetSpecialFolderPath(NULL,szPath,CSIDL_COMMON_DOCUMENTS, FALSE); </p></br>
+                                                   <p>   cout..szPath..endl;</p></br>
+                                                   <p> 	return 0;</p></br>
+                                                   <p> } </p></br>
                                                    </div>
 
                                                 <table id="sample-table-2" class="table table-striped table-bordered table-hover">
