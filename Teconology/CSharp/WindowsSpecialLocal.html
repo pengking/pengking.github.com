@@ -9,35 +9,35 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
 
 		<!-- bootstrap & fontawesome -->
-		<link rel="stylesheet" href="../../assets/css/bootstrap.css" />
-		<link rel="stylesheet" href="../../assets/css/font-awesome.css" />
+		<link rel="stylesheet" href="../assets/css/bootstrap.css" />
+		<link rel="stylesheet" href="../assets/css/font-awesome.css" />
 
 		<!-- page specific plugin styles -->
 
 		<!-- text fonts -->
-		<link rel="stylesheet" href="../../assets/css/ace-fonts.css" />
+		<link rel="stylesheet" href="../assets/css/ace-fonts.css" />
 
 		<!-- ace styles -->
-		<link rel="stylesheet" href="../../assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style" />
+		<link rel="stylesheet" href="../assets/css/ace.css" class="ace-main-stylesheet" id="main-ace-style" />
 
 		<!--[if lte IE 9]>
-			<link rel="stylesheet" href="../../assets/css/ace-part2.css" class="ace-main-stylesheet" />
+			<link rel="stylesheet" href="../assets/css/ace-part2.css" class="ace-main-stylesheet" />
 		<![endif]-->
 
 		<!--[if lte IE 9]>
-		  <link rel="stylesheet" href="../../assets/css/ace-ie.css" />
+		  <link rel="stylesheet" href="../assets/css/ace-ie.css" />
 		<![endif]-->
 
 		<!-- inline styles related to this page -->
 
 		<!-- ace settings handler -->
-		<script src="../../assets/js/ace-extra.js"></script>
+		<script src="../assets/js/ace-extra.js"></script>
 
 		<!-- HTML5shiv and Respond.js for IE8 to support HTML5 elements and media queries -->
 
 		<!--[if lte IE 8]>
-		<script src="../../assets/js/html5shiv.js"></script>
-		<script src="../../assets/js/respond.js"></script>
+		<script src="../assets/js/html5shiv.js"></script>
+		<script src="../assets/js/respond.js"></script>
 		<![endif]-->
 	</head>
 
@@ -241,7 +241,7 @@
 									<ul class="dropdown-menu dropdown-navbar">
 										<li>
 											<a href="#" class="clearfix">
-												<img src="../../assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
+												<img src="../assets/avatars/avatar.png" class="msg-photo" alt="Alex's Avatar" />
 												<span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">Alex:</span>
@@ -258,7 +258,7 @@
 
 										<li>
 											<a href="#" class="clearfix">
-												<img src="../../assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
+												<img src="../assets/avatars/avatar3.png" class="msg-photo" alt="Susan's Avatar" />
 												<span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">Susan:</span>
@@ -275,7 +275,7 @@
 
 										<li>
 											<a href="#" class="clearfix">
-												<img src="../../assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
+												<img src="../assets/avatars/avatar4.png" class="msg-photo" alt="Bob's Avatar" />
 												<span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">Bob:</span>
@@ -292,7 +292,7 @@
 
 										<li>
 											<a href="#" class="clearfix">
-												<img src="../../assets/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
+												<img src="../assets/avatars/avatar2.png" class="msg-photo" alt="Kate's Avatar" />
 												<span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">Kate:</span>
@@ -309,7 +309,7 @@
 
 										<li>
 											<a href="#" class="clearfix">
-												<img src="../../assets/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
+												<img src="../assets/avatars/avatar5.png" class="msg-photo" alt="Fred's Avatar" />
 												<span class="msg-body">
 													<span class="msg-title">
 														<span class="blue">Fred:</span>
@@ -338,7 +338,7 @@
 						<!-- #section:basics/navbar.user_menu -->
 						<li class="light-blue">
 							<a data-toggle="dropdown" href="#" class="dropdown-toggle">
-								<img class="nav-user-photo" src="../../assets/avatars/user.jpg" alt="Jason's Photo" />
+								<img class="nav-user-photo" src="../assets/avatars/user.jpg" alt="Jason's Photo" />
 								<span class="user-info">
 									<small>Welcome,</small>
 									Jason
@@ -1201,16 +1201,19 @@
 
 								<fieldset>
 									<legend class="center">windows特殊路径C#、bat、以及C++获取</legend>
+									<div class="panel-body lead collapse navbar-collapse" >
 									<ul>
-
+									
 									<p>主要内容如下：</p>
-									   <li>C#特殊路径</li>
-									   <li>批处理特殊路径</li>
-									   <li>C++特殊路径</li>
+									   <li ><a href="#CSharpContent">C#特殊路径</a></li>
+									   <li><a href = "#BatContent">批处理特殊路径</a></li>
+									   <li><a href = "#CPlusPlusContent">C++特殊路径</a></li>
+									   <li><a href = "#EndBlock">总结</a></li>
 									</ul>
+									</div>
 
 									<div class="row">
-									<div class="col-sm-6">
+									<div class="col-sm-12" id="CSharpContent">
 										<div class="widget-box transparent">
 											<div class="widget-header widget-header-flat">
 												<h4 class="widget-title lighter">
@@ -1228,8 +1231,127 @@
 											<div class="widget-body">
 												<div class="widget-main no-padding">
 
+												<div class="panel-body lead">
+                                                    C# 使用Environment的方式获取特殊路径,主要方式如下：
+                                                    <p>var Desktop = Environment.SpecialFolder.Desktop;Environment.GetFolderPath(Desktop)</p>
+													 通过上面的方法获取的是桌面的路径。通过Environment可以获取的路径有限，主要的路径包括：
+													   
+                                                   </div>
 												<!-- 这里添加内容 -->
-													<p>	</p>
+												<table id="sample-table-2" class="table table-striped table-bordered table-hover">
+												   <thead>
+												   	<tr>
+														<th>符号</th>
+														<th>描述</th>
+													</tr>
+												   </thead>
+												   <tbody>
+												   	<tr>
+														<td>ApplicationData</td>
+														<td>目录，它用作当前漫游用户的应用程序特定数据的公共储存库。</td>
+													</tr>
+
+													<tr>
+														<td>CommonApplicationData</td>
+														<td>目录，它用作当前漫游用户的应用程序特定数据的公共储存库。</td>
+													</tr>
+
+													<tr>
+														<td>LocalApplicationData</td>
+														<td>目录，它用作当前非漫游用户使用的应用程序特定数据的公共储存库。</td>
+													</tr>
+													<tr>
+														<td>Cookies</td>
+														<td>用作 Internet Cookie 的公共储存库的目录。</td>
+													</tr>
+													<tr>
+														<td>Desktop</td>
+														<td>逻辑桌面，而不是物理文件系统位置。</td>
+													</tr>
+													<tr>
+														<td>Favorites</td>
+														<td> 用作用户收藏夹项的公共储存库的目录。</td>
+													</tr>
+													<tr>
+                                                        <td>History</td>
+                                                        <td> 用作 Internet 历史记录项的公共储存库的目录。</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td>InternetCache </td>
+                                                        <td>用作 Internet 临时文件的公共储存库的目录。</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td>Programs</td>
+                                                        <td>包含用户程序组的目录。</td>
+                                                    </tr>
+                                                    <tr>
+                                                    	<td>MyComputer</td>
+                                                    	<td> “我的电脑”文件夹。</td>
+                                                    </tr> 
+                                                    <tr>
+                                                        <td>MyMusic</td>
+                                                        <td> “My Music”文件夹。</td>
+                                                    </tr> 
+                                                    <tr>
+                                                         <td>MyPictures</td>
+                                                         <td> “My Pictures”文件夹。</td></tr> 
+                                                    <tr>
+                                                         <td>Recent</td> 
+                                                         <td>包含用户最近使用过的文档的目录。</td> </tr> 
+                                                    <tr>
+                                                         <td>SendTo </td>
+                                                         <td>包含“发送”菜单项的目录。 </td> </tr>
+                                                    <tr>
+                                                         <td>StartMenu</td>
+                                                          <td>包含“开始”菜单项的目录。</td> </tr> 
+                                                    <tr>
+                                                         <td>Startup</td>
+                                                          <td>对应于用户的“启动”程序组的目录。</td>  </tr>
+                                                    <tr>
+                                                         <td>System</td>
+                                                          <td>“System”目录。 </td> </tr>
+                                                    <tr>
+                                                         <td>Templates</td>
+                                                          <td>用作文档模板的公共储存库的目录。 </td> </tr>
+                                                    <tr>
+                                                         <td>DesktopDirectory</td> 
+                                                         <td>用于物理上存储桌面上的文件对象的目录。 </td> </tr>
+                                                    <tr>
+                                                        <td>Personal</td>
+                                                        <td>用作文档的公共储存库的目录。</td> </tr> 
+                                                    <tr>
+                                                        <td>MyDocuments</td>
+                                                         <td>“我的电脑”文件夹。 </td> </tr>
+                                                    <tr>
+                                                        <td>ProgramFiles</td>
+                                                        <td>“Program files”目录。</td> </tr> 
+                                                    <tr>
+                                                        <td>CommonProgramFiles</td> 
+                                                        <td>用于应用程序间共享的组件的目录。</td> </tr>
+
+												   </tbody>
+													
+												</table>
+												<div class="hr hr32 hr-dotted"></div>
+													<div class="panel-body lead">
+													在.Net3.5中，使用C#不能获取所有特殊系统路径，因此在获取一些路径是还是需要使用Win32程序获取。C#通过调用函数的方法实现系统特殊路径获取，使用的函数是：获取指定的系统路径 SHGetSpecialFolderPath,需要引入命名空间 using System.Runtime.InteropServices;其代码如下：
+
+                                                    <p>[DllImport("shell32.dll")]</p>
+                                                    <p>private static extern bool SHGetSpecialFolderPath(IntPtr hwndOwner, </p>
+                                                    <p>[Out] StringBuilder lpszPath, int nFolder, bool fCreate);</p>
+
+
+                                                    <p>public string GetFilePathByWin32(int CSID)</p>
+                                                    <p>{</p>
+                                                    <p>    //FOLDERID_PublicDesktop</p>
+                                                    <p>     //const int CSIDL_PROGRAMS = 0x0019; </p>
+                                                    <p>     StringBuilder pathBuilder = new StringBuilder(260);</p>
+                                                    <p>     SHGetSpecialFolderPath(IntPtr.Zero, pathBuilder, CSID, false);v
+                                                    <p>     string path = pathBuilder.ToString();</p>
+                                                    <p>     return path;</p>
+                                                    <p> }</p>
+													相关的CSID请参考如下<a href="http://www.cnblogs.com/bluestorm/p/3282502.html">C# SHGetSpecialFolderPath</a>
+                                                   </div>
 												<!-- 模块内容添加结束 -->
 
 												</div><!-- /.widget-main -->
@@ -1237,7 +1359,7 @@
 										</div><!-- /.widget-box -->
 									</div><!-- /.col -->
 
-									<div class="col-sm-6">
+									<div class="col-sm-12" id="BatContent">
 										<div class="widget-box transparent">
 											<div class="widget-header widget-header-flat">
 												<h4 class="widget-title lighter">
@@ -1258,8 +1380,58 @@
 													<div id="sales-charts"></div>
 												</div><!-- /.widget-main -->
 
+												<div class="panel-body lead">
+                                                    批处理获取系统路径主要根据宏定义的方式获取，宏定义如下列表所示： 
+                                                </div>
+
+                                                <table id="sample-table-2" class="table table-striped table-bordered table-hover">
+												   <thead>
+												   	<tr>
+														<th>符号</th>
+														<th>描述</th>
+													</tr>
+												   </thead>
+												   <tbody>
+                                                      <tr><td>CommonProgramFiles</td><td>C:\Program Files\Common Files</td>
+                                                      <tr><td>COMPUTERNAME</td><td>HELLOWORLD-PC</td>
+                                                      <tr><td>ComSpec</td><td>C:\Windows\system32\cmd.exe</td>
+                                                      <tr><td>FP_NO_HOST_CHECK</td><td>NO</td>
+                                                      <tr><td>HOMEDRIVE</td><td>C:</td>
+                                                      <tr><td>HOMEPATH</td><td>\Users\helloworld</td>
+                                                      <tr><td>LOCALAPPDATA</td><td>C:\Users\helloworld\AppData\Local</td>
+                                                      <tr><td>LOGONSERVER</td><td>\\HELLOWORLD-PC</td>
+                                                      <tr><td>NUMBER_OF_PROCESSORS</td><td>2</td>
+                                                      <tr><td>OS</td><td>Windows_NT</td>
+                                                      <tr><td>Path </td><td>环境变量</td>
+                                                      <tr><td>PATHEXT</td><td>.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC</td>
+                                                      <tr><td>PROCESSOR_ARCHITECTURE</td><td>x86</td>
+                                                      <tr><td>PROCESSOR_IDENTIFIER</td><td>x86 Family 6 Model 15 Stepping 13, GenuineIntel</td>
+                                                      <tr><td>PROCESSOR_LEVEL</td><td>6</td>
+                                                      <tr><td>PROCESSOR_REVISION</td><td>0f0d</td>
+                                                      <tr><td>ProgramData</td><td>C:\ProgramData</td>
+                                                      <tr><td>ProgramFiles</td><td>C:\Program Files</td>
+                                                      <tr><td>PROMPT</td><td>$P$G</td>
+                                                      <tr><td>PSModulePath</td><td>C:\Windows\system32\WindowsPowerShell\v1.0\Modules\</td>
+                                                      <tr><td>PUBLIC</td><td>C:\Users\Public</td>
+                                                      <tr><td>SESSIONNAME</td><td>Console</td>
+                                                      <tr><td>SystemDrive</td><td>C:</td>
+                                                      <tr><td>SystemRoot</td><td>C:\Windows</td>
+                                                      <tr><td>TEMP</td><td>C:\Users\HELLOW~1\AppData\Local\Temp</td>
+                                                      <tr><td>TMP</td><td>C:\Users\HELLOW~1\AppData\Local\Temp</td>
+                                                      <tr><td>USERDOMAIN</td><td>helloworld-PC</td>
+                                                      <tr><td>USERNAME</td><td>helloworld</td>
+                                                      <tr><td>USERPROFILE</td><td>C:\Users\helloworld</td>
+                                                      <tr><td>windir</td><td>C:\Windows</td>
+
+												   </tbody>
+													
+												</table>
+
 												<!-- 这里添加内容 -->
-													<p>	</p>
+													<p>	
+
+
+													</p>
 												<!-- 模块内容添加结束 -->
 											</div><!-- /.widget-body -->
 										</div><!-- /.widget-box -->
@@ -1271,7 +1443,7 @@
 
 								<!-- 这个内容添加C++处理 -->
 								<div class="row">
-									<div class="col-sm-6">
+									<div class="col-sm-12" id="CPlusPlusContent">
 										<div class="widget-box transparent">
 											<div class="widget-header widget-header-flat">
 												<h4 class="widget-title lighter">
@@ -1288,9 +1460,71 @@
 
 											<div class="widget-body">
 												<div class="widget-main no-padding">
+												   <div class="panel-body lead">
+                                                   C++ 通过调用函数的方法实现系统特殊路径获取，使用的函数是：获取指定的系统路径 SHGetSpecialFolderPath 
+
+                                                   <p>#include "shlobj.h">" </p>
+                                                   <p>#include "Knownfolders.h" </p>
+                                                   <p>#include "iostream" </p>
+                                                   <p>using namespace std; </p>
+                                                   <p>#pragma   comment(lib,   "shell32.lib") </p> 
+                                                   <p>int main(int argc, char const *argv[]) </p>
+                                                   <p> {</p>
+                                                   <p> 	TCHAR   szPath[MAX_PATH];</p>
+                                                   <p>   SHGetSpecialFolderPath(NULL,szPath,CSIDL_COMMON_DOCUMENTS, FALSE); </p>
+                                                   <p>   cout..szPath..endl;</p>
+                                                   <p> 	return 0;</p>
+                                                   <p> } </p>
+                                                   </div>
+
+                                                <table id="sample-table-2" class="table table-striped table-bordered table-hover">
+												   <thead>
+												   	<tr>
+														<th>符号</th>
+														<th>描述</th>
+													</tr>
+												   </thead>
+												   <tbody>
+                                                      <tr><td>CommonProgramFiles</td><td>C:\Program Files\Common Files</td>
+                                                      <tr><td>COMPUTERNAME</td><td>HELLOWORLD-PC</td>
+                                                      <tr><td>ComSpec</td><td>C:\Windows\system32\cmd.exe</td>
+                                                      <tr><td>FP_NO_HOST_CHECK</td><td>NO</td>
+                                                      <tr><td>HOMEDRIVE</td><td>C:</td>
+                                                      <tr><td>HOMEPATH</td><td>\Users\helloworld</td>
+                                                      <tr><td>LOCALAPPDATA</td><td>C:\Users\helloworld\AppData\Local</td>
+                                                      <tr><td>LOGONSERVER</td><td>\\HELLOWORLD-PC</td>
+                                                      <tr><td>NUMBER_OF_PROCESSORS</td><td>2</td>
+                                                      <tr><td>OS</td><td>Windows_NT</td>
+                                                      <tr><td>Path </td><td>环境变量</td>
+                                                      <tr><td>PATHEXT</td><td>.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC</td>
+                                                      <tr><td>PROCESSOR_ARCHITECTURE</td><td>x86</td>
+                                                      <tr><td>PROCESSOR_IDENTIFIER</td><td>x86 Family 6 Model 15 Stepping 13, GenuineIntel</td>
+                                                      <tr><td>PROCESSOR_LEVEL</td><td>6</td>
+                                                      <tr><td>PROCESSOR_REVISION</td><td>0f0d</td>
+                                                      <tr><td>ProgramData</td><td>C:\ProgramData</td>
+                                                      <tr><td>ProgramFiles</td><td>C:\Program Files</td>
+                                                      <tr><td>PROMPT</td><td>$P$G</td>
+                                                      <tr><td>PSModulePath</td><td>C:\Windows\system32\WindowsPowerShell\v1.0\Modules\</td>
+                                                      <tr><td>PUBLIC</td><td>C:\Users\Public</td>
+                                                      <tr><td>SESSIONNAME</td><td>Console</td>
+                                                      <tr><td>SystemDrive</td><td>C:</td>
+                                                      <tr><td>SystemRoot</td><td>C:\Windows</td>
+                                                      <tr><td>TEMP</td><td>C:\Users\HELLOW~1\AppData\Local\Temp</td>
+                                                      <tr><td>TMP</td><td>C:\Users\HELLOW~1\AppData\Local\Temp</td>
+                                                      <tr><td>USERDOMAIN</td><td>helloworld-PC</td>
+                                                      <tr><td>USERNAME</td><td>helloworld</td>
+                                                      <tr><td>USERPROFILE</td><td>C:\Users\helloworld</td>
+                                                      <tr><td>windir</td><td>C:\Windows</td>
+
+												   </tbody>
+													
+												</table>
+
 
 												<!-- 这里添加内容 -->
-													<p>	</p>
+													<p>
+													  
+													</p>
 												<!-- 模块内容添加结束 -->
 
 												</div><!-- /.widget-main -->
@@ -1298,8 +1532,8 @@
 										</div><!-- /.widget-box -->
 									</div><!-- /.col -->
 
-									<div class="col-sm-6">
-										<div class="widget-box transparent">
+									<div class="col-sm-12">
+										<div class="widget-box transparent" id="EndBlock">
 											<div class="widget-header widget-header-flat">
 												<h4 class="widget-title lighter">
 													<i class="ace-icon fa fa-signal"></i>
@@ -1316,10 +1550,22 @@
 											<div class="widget-body">
 												<div class="widget-main padding-4">
 													<div id="sales-charts"></div>
+													<div class="panel-body lead">
+													本文主要总结了在window下各种语言（c++ C# 和批处理）获取特殊路径的方法，由于在工作中经常要使用这种方法，因此在此做一个详细的归类已做日后的参考。下面是主要参考链接，本文主要是对下面文章的汇总整理，详细信息还请看如下原文<br>
+													<a href="http://www.cnblogs.com/DoNetCShap/p/4221899.html">
+														C#获取特殊路径
+													</a></br>
+													<a href="http://zhidao.baidu.com/link?url=aRECpNd_AnYb8L57_NRmhEXdMFpzAG7yvqQ2VyBggsom0tMeeZ3iCDOtM5GoAmpbUCXgJm0egEsKoh_XKFeMjq">
+														批处理获取特殊路径
+													</a></br>
+													<a href="http://www.cnblogs.com/riky/archive/2008/02/09/1066291.html">
+														使用C++获取指定的系统路径 SHGetSpecialFolderPath
+													</a></br>
 
 													<!-- 这里添加内容 -->
 													<p>	</p>
 												<!-- 模块内容添加结束 -->
+												</div>
 
 
 												</div><!-- /.widget-main -->
@@ -1332,13 +1578,14 @@
 								<div class="hr hr32 hr-dotted"></div>
 								<!-- 内容添加结束-->
 
-								<div class="row">
+								<div class="row hidden">
                                     <div class="col-sm-6">
                                       <div class="panel panel-default">
                                         <div class="panel-heading">
-                                          <h2 class="panel-title">更多信息</h2>
+                                          <h2 class="panel-title">C#使用Win32函数获取特殊路径</h2>
                                         </div>
                                         <div class="panel-body lead">
+                                         <a href="http://www.lxway.com/4421905414.htm">C#使用Win32函数获取特殊路径</a></br>
                                           Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed hendrerit adipiscing blandit. Aliquam placerat, velit a fermentum                             fermentum, mi felis vehicula justo, a dapibus quam augue non massa. Duis euismod, augue et tempus consequat, lorem mauris porttitor                             quam, consequat ultricies mauris mi a metus. Phasellus congue, leo sed ultricies tristique, nunc libero tempor ligula, at varius mi                             nibh in nisi. Aliquam erat volutpat. Maecenas rhoncus, neque facilisis rhoncus tempus, elit ligula varius dui, quis amet. 
                                         </div>
                                       </div>
@@ -1413,59 +1660,59 @@
 
 		<!--[if !IE]> -->
 		<script type="text/javascript">
-			window.jQuery || document.write("<script src='../../assets/js/jquery.js'>"+"<"+"/script>");
+			window.jQuery || document.write("<script src='../assets/js/jquery.js'>"+"<"+"/script>");
 		</script>
 
 		<!-- <![endif]-->
 
 		<!--[if IE]>
 <script type="text/javascript">
- window.jQuery || document.write("<script src='../../assets/js/jquery1x.js'>"+"<"+"/script>");
+ window.jQuery || document.write("<script src='../assets/js/jquery1x.js'>"+"<"+"/script>");
 </script>
 <![endif]-->
 		<script type="text/javascript">
-			if('ontouchstart' in document.documentElement) document.write("<script src='../../assets/js/jquery.mobile.custom.js'>"+"<"+"/script>");
+			if('ontouchstart' in document.documentElement) document.write("<script src='../assets/js/jquery.mobile.custom.js'>"+"<"+"/script>");
 		</script>
-		<script src="../../assets/js/bootstrap.js"></script>
+		<script src="../assets/js/bootstrap.js"></script>
 
 		<!-- page specific plugin scripts -->
 
 		<!-- ace scripts -->
-		<script src="../../assets/js/ace/elements.scroller.js"></script>
-		<script src="../../assets/js/ace/elements.colorpicker.js"></script>
-		<script src="../../assets/js/ace/elements.fileinput.js"></script>
-		<script src="../../assets/js/ace/elements.typeahead.js"></script>
-		<script src="../../assets/js/ace/elements.wysiwyg.js"></script>
-		<script src="../../assets/js/ace/elements.spinner.js"></script>
-		<script src="../../assets/js/ace/elements.treeview.js"></script>
-		<script src="../../assets/js/ace/elements.wizard.js"></script>
-		<script src="../../assets/js/ace/elements.aside.js"></script>
-		<script src="../../assets/js/ace/ace.js"></script>
-		<script src="../../assets/js/ace/ace.ajax-content.js"></script>
-		<script src="../../assets/js/ace/ace.touch-drag.js"></script>
-		<script src="../../assets/js/ace/ace.sidebar.js"></script>
-		<script src="../../assets/js/ace/ace.sidebar-scroll-1.js"></script>
-		<script src="../../assets/js/ace/ace.submenu-hover.js"></script>
-		<script src="../../assets/js/ace/ace.widget-box.js"></script>
-		<script src="../../assets/js/ace/ace.settings.js"></script>
-		<script src="../../assets/js/ace/ace.settings-rtl.js"></script>
-		<script src="../../assets/js/ace/ace.settings-skin.js"></script>
-		<script src="../../assets/js/ace/ace.widget-on-reload.js"></script>
-		<script src="../../assets/js/ace/ace.searchbox-autocomplete.js"></script>
+		<script src="../assets/js/ace/elements.scroller.js"></script>
+		<script src="../assets/js/ace/elements.colorpicker.js"></script>
+		<script src="../assets/js/ace/elements.fileinput.js"></script>
+		<script src="../assets/js/ace/elements.typeahead.js"></script>
+		<script src="../assets/js/ace/elements.wysiwyg.js"></script>
+		<script src="../assets/js/ace/elements.spinner.js"></script>
+		<script src="../assets/js/ace/elements.treeview.js"></script>
+		<script src="../assets/js/ace/elements.wizard.js"></script>
+		<script src="../assets/js/ace/elements.aside.js"></script>
+		<script src="../assets/js/ace/ace.js"></script>
+		<script src="../assets/js/ace/ace.ajax-content.js"></script>
+		<script src="../assets/js/ace/ace.touch-drag.js"></script>
+		<script src="../assets/js/ace/ace.sidebar.js"></script>
+		<script src="../assets/js/ace/ace.sidebar-scroll-1.js"></script>
+		<script src="../assets/js/ace/ace.submenu-hover.js"></script>
+		<script src="../assets/js/ace/ace.widget-box.js"></script>
+		<script src="../assets/js/ace/ace.settings.js"></script>
+		<script src="../assets/js/ace/ace.settings-rtl.js"></script>
+		<script src="../assets/js/ace/ace.settings-skin.js"></script>
+		<script src="../assets/js/ace/ace.widget-on-reload.js"></script>
+		<script src="../assets/js/ace/ace.searchbox-autocomplete.js"></script>
 
 		<!-- inline scripts related to this page -->
 
 		<!-- the following scripts are used in demo only for onpage help and you don't need them -->
-		<link rel="stylesheet" href="../../assets/css/ace.onpage-help.css" />
-		<link rel="stylesheet" href="../docs/../../assets/js/themes/sunburst.css" />
+		<link rel="stylesheet" href="../assets/css/ace.onpage-help.css" />
+		<link rel="stylesheet" href="../docs/../assets/js/themes/sunburst.css" />
 
 		<script type="text/javascript"> ace.vars['base'] = '..'; </script>
-		<script src="../../assets/js/ace/elements.onpage-help.js"></script>
-		<script src="../../assets/js/ace/ace.onpage-help.js"></script>
-		<script src="../docs/../../assets/js/rainbow.js"></script>
-		<script src="../docs/../../assets/js/language/generic.js"></script>
-		<script src="../docs/../../assets/js/language/html.js"></script>
-		<script src="../docs/../../assets/js/language/css.js"></script>
-		<script src="../docs/../../assets/js/language/javascript.js"></script>
+		<script src="../assets/js/ace/elements.onpage-help.js"></script>
+		<script src="../assets/js/ace/ace.onpage-help.js"></script>
+		<script src="../docs/../assets/js/rainbow.js"></script>
+		<script src="../docs/../assets/js/language/generic.js"></script>
+		<script src="../docs/../assets/js/language/html.js"></script>
+		<script src="../docs/../assets/js/language/css.js"></script>
+		<script src="../docs/../assets/js/language/javascript.js"></script>
 	</body>
 </html>
