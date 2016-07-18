@@ -1201,13 +1201,16 @@
 
 								<fieldset>
 									<legend class="center">windows特殊路径C#、bat、以及C++获取</legend>
+									<div class="panel-body lead collapse navbar-collapse" >
 									<ul>
-
+									
 									<p>主要内容如下：</p>
-									   <li ><a ref = "#CSharpContent">C#特殊路径</a></li>
-									   <li><a ref = "#BatContent">批处理特殊路径</a></li>
-									   <li><a ref = "#">C++特殊路径</a></li>
+									   <li ><a href="#CSharpContent">C#特殊路径</a></li>
+									   <li><a href = "#BatContent">批处理特殊路径</a></li>
+									   <li><a href = "#CPlusPlusContent">C++特殊路径</a></li>
+									   <li><a href = "#EndBlock">总结</a></li>
 									</ul>
+									</div>
 
 									<div class="row">
 									<div class="col-sm-12" id="CSharpContent">
@@ -1234,7 +1237,6 @@
 													 通过上面的方法获取的是桌面的路径。通过Environment可以获取的路径有限，主要的路径包括：
 													   
                                                    </div>
-
 												<!-- 这里添加内容 -->
 												<table id="sample-table-2" class="table table-striped table-bordered table-hover">
 												   <thead>
@@ -1332,8 +1334,23 @@
 												</table>
 												<div class="hr hr32 hr-dotted"></div>
 													<div class="panel-body lead">
-													在.Net3.5中，使用C#不能获取所有特殊系统路径，因此在获取一些路径是还是需要使用Win32程序获取。
-													   
+													在.Net3.5中，使用C#不能获取所有特殊系统路径，因此在获取一些路径是还是需要使用Win32程序获取。C#通过调用函数的方法实现系统特殊路径获取，使用的函数是：获取指定的系统路径 SHGetSpecialFolderPath,需要引入命名空间 using System.Runtime.InteropServices;其代码如下：
+
+                                                    <p>[DllImport("shell32.dll")]</p>
+                                                    <p>private static extern bool SHGetSpecialFolderPath(IntPtr hwndOwner, </p>
+                                                    <p>[Out] StringBuilder lpszPath, int nFolder, bool fCreate);</p>
+
+
+                                                    <p>public string GetFilePathByWin32(int CSID)</p>
+                                                    <p>{</p>
+                                                    <p>    //FOLDERID_PublicDesktop</p>
+                                                    <p>     //const int CSIDL_PROGRAMS = 0x0019; </p>
+                                                    <p>     StringBuilder pathBuilder = new StringBuilder(260);</p>
+                                                    <p>     SHGetSpecialFolderPath(IntPtr.Zero, pathBuilder, CSID, false);v
+                                                    <p>     string path = pathBuilder.ToString();</p>
+                                                    <p>     return path;</p>
+                                                    <p> }</p>
+													相关的CSID请参考如下<a href="http://www.cnblogs.com/bluestorm/p/3282502.html">C# SHGetSpecialFolderPath</a>
                                                    </div>
 												<!-- 模块内容添加结束 -->
 
@@ -1426,7 +1443,7 @@
 
 								<!-- 这个内容添加C++处理 -->
 								<div class="row">
-									<div class="col-sm-12">
+									<div class="col-sm-12" id="CPlusPlusContent">
 										<div class="widget-box transparent">
 											<div class="widget-header widget-header-flat">
 												<h4 class="widget-title lighter">
@@ -1446,18 +1463,18 @@
 												   <div class="panel-body lead">
                                                    C++ 通过调用函数的方法实现系统特殊路径获取，使用的函数是：获取指定的系统路径 SHGetSpecialFolderPath 
 
-                                                   <p>#include "shlobj.h">" </p></br>
-                                                   <p>#include "Knownfolders.h" </p></br>
-                                                   <p>#include "iostream" </p></br>
-                                                   <p>using namespace std; </p></br>
-                                                   <p>#pragma   comment(lib,   "shell32.lib") </p> </br> 
-                                                   <p>int main(int argc, char const *argv[]) </p></br>
-                                                   <p> {</p></br>
-                                                   <p> 	TCHAR   szPath[MAX_PATH];</p></br>
-                                                   <p>   SHGetSpecialFolderPath(NULL,szPath,CSIDL_COMMON_DOCUMENTS, FALSE); </p></br>
-                                                   <p>   cout..szPath..endl;</p></br>
-                                                   <p> 	return 0;</p></br>
-                                                   <p> } </p></br>
+                                                   <p>#include "shlobj.h">" </p>
+                                                   <p>#include "Knownfolders.h" </p>
+                                                   <p>#include "iostream" </p>
+                                                   <p>using namespace std; </p>
+                                                   <p>#pragma   comment(lib,   "shell32.lib") </p> 
+                                                   <p>int main(int argc, char const *argv[]) </p>
+                                                   <p> {</p>
+                                                   <p> 	TCHAR   szPath[MAX_PATH];</p>
+                                                   <p>   SHGetSpecialFolderPath(NULL,szPath,CSIDL_COMMON_DOCUMENTS, FALSE); </p>
+                                                   <p>   cout..szPath..endl;</p>
+                                                   <p> 	return 0;</p>
+                                                   <p> } </p>
                                                    </div>
 
                                                 <table id="sample-table-2" class="table table-striped table-bordered table-hover">
@@ -1516,7 +1533,7 @@
 									</div><!-- /.col -->
 
 									<div class="col-sm-12">
-										<div class="widget-box transparent">
+										<div class="widget-box transparent" id="EndBlock">
 											<div class="widget-header widget-header-flat">
 												<h4 class="widget-title lighter">
 													<i class="ace-icon fa fa-signal"></i>
@@ -1533,6 +1550,8 @@
 											<div class="widget-body">
 												<div class="widget-main padding-4">
 													<div id="sales-charts"></div>
+													<div class="panel-body lead">
+													本文主要总结了在window下各种语言（c++ C# 和批处理）获取特殊路径的方法，由于在工作中经常要使用这种方法，因此在此做一个详细的归类已做日后的参考。下面是主要参考链接，本文主要是对下面文章的汇总整理，详细信息还请看如下原文<br>
 													<a href="http://www.cnblogs.com/DoNetCShap/p/4221899.html">
 														C#获取特殊路径
 													</a></br>
@@ -1546,6 +1565,7 @@
 													<!-- 这里添加内容 -->
 													<p>	</p>
 												<!-- 模块内容添加结束 -->
+												</div>
 
 
 												</div><!-- /.widget-main -->
@@ -1558,7 +1578,7 @@
 								<div class="hr hr32 hr-dotted"></div>
 								<!-- 内容添加结束-->
 
-								<div class="row">
+								<div class="row hidden">
                                     <div class="col-sm-6">
                                       <div class="panel panel-default">
                                         <div class="panel-heading">
