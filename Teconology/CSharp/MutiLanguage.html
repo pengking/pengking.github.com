@@ -1214,7 +1214,7 @@
 									</div>
 
 									<div class="row">
-									<div class="col-sm-6">
+									<div class="col-sm-12">
 										<div class="widget-box transparent">
 											<div class="widget-header widget-header-flat">
 												<h4 class="widget-title lighter">
@@ -1234,7 +1234,17 @@
 												<div class="panel-body lead">
 												方案1采用.Net Framework2.0 公共资源文件（.resx）+ExtJS实现。为每个区域用户分别添加该区域的语言描述文件（默认语言.resx,中文.resx,英文.resx）。语言描述文件内容主要包括：关键字名称（key_name）, 关键字值（key_value），其中关键字名称是唯一的。系统根据当前用户选择的区域语言，在相应的区域语言描述文件中获取界面显示信息。<br>
 
-												在解决方案管理器中添加Asp.Net 文件夹“App_GlobalResources”。在文件夹中添加资源文件，例如 lang.resx。添加所要描述的键名称、键值。此文件为默认文件。添加其他种类语言的描述文件，例如 英文（lang.en-US.resx）、中文(lang.zh-CN.resx)，它们与默认文件的键名称相同，键值不同。如下图所示：
+												<p class="strong">  .Net多语言使用步骤:</p>
+
+												(1) 使用全局资源方案<br>
+												App_GlobalResources资源很方便其既可以在ASP页面中使用也可以在JavaScript中使用。添加全局资源的方法如下：首先，在项目解决方案管理器中创建名为“App_GlobalResources”的文件夹，并在文件夹中添加资源文件（包括各种语言的资源文件），例如 lang.resx，lang_en-us.resx、lang.en-ch.resx、lang.zh-tw.resx等。然后在资源文件中添加所要描述的键名称、键值。此文件为默认文件。添加其他种类语言的描述文件，例如 英文（lang.en-US.resx）、中文(lang.zh-CN.resx)，它们与默认文件的键名称相同，键值不同。如下图所示：<br>
+
+												<p class="strong"> 全局资源的使用:</p>
+												
+												
+
+
+
 
 												<!-- 这里添加内容 -->
 													<p>	</p>
@@ -1247,7 +1257,7 @@
 										</div><!-- /.widget-box -->
 									</div><!-- /.col -->
 
-									<div class="col-sm-6">
+									<div class="col-sm-12">
 										<div class="widget-box transparent">
 											<div class="widget-header widget-header-flat">
 												<h4 class="widget-title lighter">
@@ -1284,7 +1294,7 @@
 
 								<!-- 这个内容添加C++处理 -->
 								<div class="row">
-									<div class="col-sm-6">
+									<div class="col-sm-12">
 										<div class="widget-box transparent">
 											<div class="widget-header widget-header-flat">
 												<h4 class="widget-title lighter">
@@ -1311,7 +1321,7 @@
 										</div><!-- /.widget-box -->
 									</div><!-- /.col -->
 
-									<div class="col-sm-6">
+									<div class="col-sm-12">
 										<div class="widget-box transparent">
 											<div class="widget-header widget-header-flat">
 												<h4 class="widget-title lighter">
@@ -1345,7 +1355,7 @@
 								<div class="hr hr32 hr-dotted"></div>
 								<!-- 内容添加结束-->
 
-								<div class="row">
+								<div class="row hidden">
                                     <div class="col-sm-6">
                                       <div class="panel panel-default">
                                         <div class="panel-heading">
