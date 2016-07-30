@@ -1239,20 +1239,39 @@
 												(1) 使用全局资源方案<br>
 												App_GlobalResources资源很方便其既可以在ASP页面中使用也可以在JavaScript中使用。添加全局资源的方法如下：首先，在项目解决方案管理器中创建名为“App_GlobalResources”的文件夹，并在文件夹中添加资源文件（包括各种语言的资源文件），例如 lang.resx，lang_en-us.resx、lang.en-ch.resx、lang.zh-tw.resx等。然后在资源文件中添加所要描述的键名称、键值。此文件为默认文件。添加其他种类语言的描述文件，例如 英文（lang.en-US.resx）、中文(lang.zh-CN.resx)，它们与默认文件的键名称相同，键值不同。如下图所示：<br>
 
+
 												<p class="strong"> 全局资源的使用:</p>
+												<ul>
+													<li>
+														javascript使用全局资源
+													</li>
+													<p>首先在全局资源中定义Message的中文英文的翻译，然后在JavaScript中通过如下方式使用该资源：var strLang="<%=Resources.lang.Message%>";</p>
+												</ul>
+
+												<p class="strong"> （2）局部资源的使用:</p>
+
+												<ul>
+													<li>
+														HTML中使用局部资源
+													</li>
+													<p>首先在局部资源中定义资源的中文英文的翻译，然后在HTML中添加该调用。例如：在HTML中定义了一个input标签，这个标签中的语言可以用语言资源号，然后定义其在Server中使用;
+
+													</p>
+													<textarea style="width:100%; height:200px">
+在局部资源中添加资源如:TestPlaceholderLanaguage.placeholder test(eng) 测试(ch) ,
+然后在Input中使用该局部资源
+<input type="text" placeholder="test" runat=server meta:resourcekey="TestPlaceholderLanaguage" />
+														
+													</textarea>
+												</ul>
+												<p class="strong">  .Net多语言使用的优点:</p>
+												<p>本方案实现简单，操作方便，安全性高。对各种浏览器适应性高。</p>
+
+												<p class="strong">  .Net多语言使用的缺点:</p>
+												<p>部署后不易维护，需要重新编译。数据信息无法分类，难护分类。</p>
+												</hr>
+
 												
-												
-
-
-
-
-												<!-- 这里添加内容 -->
-													<p>	</p>
-
-												<!-- 模块内容添加结束 -->
-												</div>
-
-												</div><!-- /.widget-main -->
 											</div><!-- /.widget-body -->
 										</div><!-- /.widget-box -->
 									</div><!-- /.col -->
@@ -1278,6 +1297,17 @@
 													<div id="sales-charts"></div>
 												</div><!-- /.widget-main -->
 												<div class="panel-body lead">
+
+												<p>本方案通过JavaScript与xml实现多语言支持，首先将区域语言描述数据存放在XML文件中，根据在XML文件中自定义的节点标志变量及标志变量的值,然后通过Javascript对XML文件进行读取操作。</p>
+
+												<hr>
+
+												<p class="strong">  JavaScript+XML完成多语言支持优点:</p>
+												<p>资源文件维护方便，不用重新编译。数据信息可以分类，便于维护。</p>
+
+												<p class="strong">  JavaScript+XML完成多语言支持缺点:</p>
+												<p>安全性差，用户可以直接打开资源文件。适应性差。系统需要辨别不同的浏览器（IE，Firefox..）。。</p>
+												</hr>
 
 
 												<!-- 这里添加内容 -->
@@ -1312,6 +1342,7 @@
 											<div class="widget-body">
 												<div class="widget-main no-padding">
 
+												<p>Javascript多语言主要是将代翻译的文件存放在对象中通过调用完成语言切换，具体的例子以后给出</p>
 												<!-- 这里添加内容 -->
 													<p>	</p>
 												<!-- 模块内容添加结束 -->
@@ -1339,6 +1370,9 @@
 											<div class="widget-body">
 												<div class="widget-main padding-4">
 													<div id="sales-charts"></div>
+													<p>在工作中由于对JavaScript多语言方案不熟悉，现在只使用的第一种方案，这种方案的缺点在于对.Net的依赖性太强，如果要将后台迁移到NOde下对语言的处理将比较麻烦。以后可以考虑使用JavaScript实现多语言方案这样就无需考虑平台迁移问题了。
+
+													</p>
 
 													<!-- 这里添加内容 -->
 													<p>	</p>
