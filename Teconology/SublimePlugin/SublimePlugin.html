@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>README.md—E:\program\SublimePlugin\SublimePlugin\FirstP</title>
+    <style type="text/css">
+    html{font-family: sans-serif;-ms-text-size-adjust: 100%;-webkit-text-size-adjust: 100%}body{margin: 0}article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,summary{display: block}audio,canvas,progress,video{display: inline-block;vertical-align: baseline}audio:not([controls]){display: none;height: 0}[hidden],template{display: none}a{background: transparent}a:active,a:hover{outline: 0}abbr[title]{border-bottom: 1px dotted}b,strong{font-weight: bold}dfn{font-style: italic}h1{font-size: 2em;margin: 0.67em 0}mark{background: #ff0;color: #000}small{font-size: 80%}sub,sup{font-size: 75%;line-height: 0;position: relative;vertical-align: baseline}sup{top: -0.5em}sub{bottom: -0.25em}img{border: 0}svg:not(:root){overflow: hidden}figure{margin: 1em 40px}hr{box-sizing: content-box;height: 0}pre{overflow: auto}code,kbd,pre,samp{font-family: monospace, monospace;font-size: 1em}button,input,optgroup,select,textarea{color: inherit;font: inherit;margin: 0}button{overflow: visible}button,select{text-transform: none}button,html input[type="button"],input[type="reset"],input[type="submit"]{-webkit-appearance: button;cursor: pointer}button[disabled],html input[disabled]{cursor: default}button::-moz-focus-inner,input::-moz-focus-inner{border: 0;padding: 0}input{line-height: normal}input[type="checkbox"],input[type="radio"]{box-sizing: border-box;padding: 0}input[type="number"]::-webkit-inner-spin-button,input[type="number"]::-webkit-outer-spin-button{height: auto}input[type="search"]{-webkit-appearance: textfield;box-sizing: content-box}input[type="search"]::-webkit-search-cancel-button,input[type="search"]::-webkit-search-decoration{-webkit-appearance: none}fieldset{border: 1px solid #c0c0c0;margin: 0 2px;padding: 0.35em 0.625em 0.75em}legend{border: 0;padding: 0}textarea{overflow: auto}optgroup{font-weight: bold}table{border-collapse: collapse;border-spacing: 0}td,th{padding: 0}*{box-sizing: border-box}input,select,textarea,button{font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"}body{min-width: 1020px;font: 13px/1.4 Helvetica, arial, freesans, clean, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";color: #333;background-color: #fff}a{color: #4183c4;text-decoration: none}a:hover,a:active{text-decoration: underline}hr,.rule{height: 0;margin: 15px 0;overflow: hidden;background: transparent;border: 0;border-bottom: 1px solid #ddd}hr:before,.rule:before{display: table;content: ""}hr:after,.rule:after{display: table;clear: both;content: ""}h1,h2,h3,h4,h5,h6{margin-top: 15px;margin-bottom: 15px;line-height: 1.1}h1{font-size: 30px}h2{font-size: 21px}h3{font-size: 16px}h4{font-size: 14px}h5{font-size: 12px}h6{font-size: 11px}small{font-size: 90%}blockquote{margin: 0}.lead{margin-bottom: 30px;font-size: 20px;font-weight: 300;color: #555}.text-muted{color: #999}.text-danger{color: #bd2c00}.text-emphasized{font-weight: bold;color: #333}ul,ol{padding: 0;margin-top: 0;margin-bottom: 0}ol ol,ul ol{list-style-type: lower-roman}ul ul ol,ul ol ol,ol ul ol,ol ol ol{list-style-type: lower-alpha}dd{margin-left: 0}tt,code{font-family: Consolas, "Liberation Mono", Menlo, Courier, monospace;font-size: 12px}pre{margin-top: 0;margin-bottom: 0;font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace}#realtime .status{overflow: visible;position: absolute;top: -5px;left: 0;background: url("/public/images/github-status.png");width: 26px;height: 26px;display: block;margin: 0 5px 0 0}#realtime .up{background-position: 0 0}#realtime .problem{background-position: 0 -53px}#realtime .down{background-position: 0 -26px}.container{max-width: 920px;margin: 0 auto 20px auto}#header{background: #FAFAFA;background: -moz-linear-gradient(#FAFAFA, #EAEAEA);background: -webkit-linear-gradient(#FAFAFA, #EAEAEA);-ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#eaeaea')";border-bottom: 1px solid #CACACA;box-shadow: 0 1px 0 rgba(255, 255, 255, 0.4),0 0 10px rgba(0, 0, 0, 0.1)}#markup{padding: 3px}#markup article{padding-top: 30px}.markdown-body{overflow: hidden;font-family: "Helvetica Neue", Helvetica, "Segoe UI", Arial, freesans, sans-serif;font-size: 16px;line-height: 1.6;word-wrap: break-word}.markdown-body>*:first-child{margin-top: 0 !important}.markdown-body>*:last-child{margin-bottom: 0 !important}.markdown-body .absent{color: #c00}.markdown-body .anchor{position: absolute;top: 0;left: 0;display: block;padding-right: 6px;padding-left: 30px;margin-left: -30px}.markdown-body .anchor:focus{outline: none}.markdown-body h1,.markdown-body h2,.markdown-body h3,.markdown-body h4,.markdown-body h5,.markdown-body h6{position: relative;margin-top: 1em;margin-bottom: 16px;font-weight: bold;line-height: 1.4}.markdown-body h1 .octicon-link,.markdown-body h2 .octicon-link,.markdown-body h3 .octicon-link,.markdown-body h4 .octicon-link,.markdown-body h5 .octicon-link,.markdown-body h6 .octicon-link{display: none;color: #000;vertical-align: middle}.markdown-body h1:hover .anchor,.markdown-body h2:hover .anchor,.markdown-body h3:hover .anchor,.markdown-body h4:hover .anchor,.markdown-body h5:hover .anchor,.markdown-body h6:hover .anchor{padding-left: 8px;margin-left: -30px;text-decoration: none}.markdown-body h1:hover .anchor .octicon-link,.markdown-body h2:hover .anchor .octicon-link,.markdown-body h3:hover .anchor .octicon-link,.markdown-body h4:hover .anchor .octicon-link,.markdown-body h5:hover .anchor .octicon-link,.markdown-body h6:hover .anchor .octicon-link{display: inline-block}.markdown-body h1 tt,.markdown-body h1 code,.markdown-body h2 tt,.markdown-body h2 code,.markdown-body h3 tt,.markdown-body h3 code,.markdown-body h4 tt,.markdown-body h4 code,.markdown-body h5 tt,.markdown-body h5 code,.markdown-body h6 tt,.markdown-body h6 code{font-size: inherit}.markdown-body h1{padding-bottom: 0.3em;font-size: 2.25em;line-height: 1.2;border-bottom: 1px solid #eee}.markdown-body h1 .anchor{line-height: 1}.markdown-body h2{padding-bottom: 0.3em;font-size: 1.75em;line-height: 1.225;border-bottom: 1px solid #eee}.markdown-body h2 .anchor{line-height: 1}.markdown-body h3{font-size: 1.5em;line-height: 1.43}.markdown-body h3 .anchor{line-height: 1.2}.markdown-body h4{font-size: 1.25em}.markdown-body h4 .anchor{line-height: 1.2}.markdown-body h5{font-size: 1em}.markdown-body h5 .anchor{line-height: 1.1}.markdown-body h6{font-size: 1em;color: #777}.markdown-body h6 .anchor{line-height: 1.1}.markdown-body p,.markdown-body blockquote,.markdown-body ul,.markdown-body ol,.markdown-body dl,.markdown-body table,.markdown-body pre{margin-top: 0;margin-bottom: 16px}.markdown-body hr{height: 4px;padding: 0;margin: 16px 0;background-color: #e7e7e7;border: 0 none}.markdown-body ul,.markdown-body ol{padding-left: 2em}.markdown-body ul.no-list,.markdown-body ol.no-list{padding: 0;list-style-type: none}.markdown-body ul ul,.markdown-body ul ol,.markdown-body ol ol,.markdown-body ol ul{margin-top: 0;margin-bottom: 0}.markdown-body li>p{margin-top: 16px}.markdown-body dl{padding: 0}.markdown-body dl dt{padding: 0;margin-top: 16px;font-size: 1em;font-style: italic;font-weight: bold}.markdown-body dl dd{padding: 0 16px;margin-bottom: 16px}.markdown-body blockquote{padding: 0 15px;color: #777;border-left: 4px solid #ddd}.markdown-body blockquote>:first-child{margin-top: 0}.markdown-body blockquote>:last-child{margin-bottom: 0}.markdown-body table{display: block;width: 100%;overflow: auto;word-break: normal;word-break: keep-all}.markdown-body table th{font-weight: bold}.markdown-body table th,.markdown-body table td{padding: 6px 13px;border: 1px solid #ddd}.markdown-body table tr{background-color: #fff;border-top: 1px solid #ccc}.markdown-body table tr:nth-child(2n){background-color: #f8f8f8}.markdown-body img{max-width: 100%;box-sizing: border-box}.markdown-body span.frame{display: block;overflow: hidden}.markdown-body span.frame>span{display: block;float: left;width: auto;padding: 7px;margin: 13px 0 0;overflow: hidden;border: 1px solid #ddd}.markdown-body span.frame span img{display: block;float: left}.markdown-body span.frame span span{display: block;padding: 5px 0 0;clear: both;color: #333}.markdown-body span.align-center{display: block;overflow: hidden;clear: both}.markdown-body span.align-center>span{display: block;margin: 13px auto 0;overflow: hidden;text-align: center}.markdown-body span.align-center span img{margin: 0 auto;text-align: center}.markdown-body span.align-right{display: block;overflow: hidden;clear: both}.markdown-body span.align-right>span{display: block;margin: 13px 0 0;overflow: hidden;text-align: right}.markdown-body span.align-right span img{margin: 0;text-align: right}.markdown-body span.float-left{display: block;float: left;margin-right: 13px;overflow: hidden}.markdown-body span.float-left span{margin: 13px 0 0}.markdown-body span.float-right{display: block;float: right;margin-left: 13px;overflow: hidden}.markdown-body span.float-right>span{display: block;margin: 13px auto 0;overflow: hidden;text-align: right}.markdown-body code,.markdown-body tt{padding: 0;padding-top: 0.2em;padding-bottom: 0.2em;margin: 0;font-size: 85%;background-color: rgba(0,0,0,0.04);border-radius: 3px}.markdown-body code:before,.markdown-body code:after,.markdown-body tt:before,.markdown-body tt:after{letter-spacing: -0.2em;content: "\00a0"}.markdown-body code br,.markdown-body tt br{display: none}.markdown-body del code{text-decoration: inherit}.markdown-body pre>code{padding: 0;margin: 0;font-size: 100%;word-break: normal;white-space: pre;background: transparent;border: 0}.markdown-body .highlight{margin-bottom: 16px}.markdown-body .highlight pre,.markdown-body pre{padding: 16px;overflow: auto;font-size: 85%;line-height: 1.45;background-color: #f7f7f7;border-radius: 3px}.markdown-body .highlight pre{margin-bottom: 0;word-break: normal}.markdown-body pre{word-wrap: normal}.markdown-body pre code,.markdown-body pre tt{display: inline;max-width: initial;padding: 0;margin: 0;overflow: initial;line-height: inherit;word-wrap: normal;background-color: transparent;border: 0}.markdown-body pre code:before,.markdown-body pre code:after,.markdown-body pre tt:before,.markdown-body pre tt:after{content: normal}.markdown-body kbd{display: inline-block;padding: 3px 5px;font-size: 11px;line-height: 10px;color: #555;vertical-align: middle;background-color: #fcfcfc;border: solid 1px #ccc;border-bottom-color: #bbb;border-radius: 3px;box-shadow: inset 0 -1px 0 #bbb}.codehilite{background: #ffffff}.codehilite .c{color: #999988;font-style: italic}.codehilite .err{color: #a61717;background-color: #e3d2d2}.codehilite .k{color: #000000;font-weight: bold}.codehilite .o{color: #000000;font-weight: bold}.codehilite .cm{color: #999988;font-style: italic}.codehilite .cp{color: #999999;font-weight: bold}.codehilite .c1{color: #999988;font-style: italic}.codehilite .cs{color: #999999;font-weight: bold;font-style: italic}.codehilite .gd{color: #000000;background-color: #ffdddd}.codehilite .gd .x{color: #000000;background-color: #ffaaaa}.codehilite .ge{color: #000000;font-style: italic}.codehilite .gr{color: #aa0000}.codehilite .gh{color: #999999}.codehilite .gi{color: #000000;background-color: #ddffdd}.codehilite .gi .x{color: #000000;background-color: #aaffaa}.codehilite .go{color: #888888}.codehilite .gp{color: #555555}.codehilite .gs{font-weight: bold}.codehilite .gu{color: #aaaaaa}.codehilite .gt{color: #aa0000}.codehilite .kc{color: #000000;font-weight: bold}.codehilite .kd{color: #000000;font-weight: bold}.codehilite .kp{color: #000000;font-weight: bold}.codehilite .kr{color: #000000;font-weight: bold}.codehilite .kt{color: #445588;font-weight: bold}.codehilite .m{color: #009999}.codehilite .s{color: #d14}.codehilite .na{color: #008080}.codehilite .nb{color: #0086B3}.codehilite .nc{color: #445588;font-weight: bold}.codehilite .no{color: #008080}.codehilite .ni{color: #800080}.codehilite .ne{color: #990000;font-weight: bold}.codehilite .nf{color: #990000;font-weight: bold}.codehilite .nn{color: #555555}.codehilite .nt{color: #000080}.codehilite .nv{color: #008080}.codehilite .ow{color: #000000;font-weight: bold}.codehilite .w{color: #bbbbbb}.codehilite .mf{color: #009999}.codehilite .mh{color: #009999}.codehilite .mi{color: #009999}.codehilite .mo{color: #009999}.codehilite .sb{color: #d14}.codehilite .sc{color: #d14}.codehilite .sd{color: #d14}.codehilite .s2{color: #d14}.codehilite .se{color: #d14}.codehilite .sh{color: #d14}.codehilite .si{color: #d14}.codehilite .sx{color: #d14}.codehilite .sr{color: #009926}.codehilite .s1{color: #d14}.codehilite .ss{color: #990073}.codehilite .bp{color: #999999}.codehilite .vc{color: #008080}.codehilite .vg{color: #008080}.codehilite .vi{color: #008080}.codehilite .il{color: #009999}
+    </style>
+    <style type="text/css">
+      .markdown-body hr{background:url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAECAYAAACtBE5DAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyJpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBNYWNpbnRvc2giIHhtcE1NOkluc3RhbmNlSUQ9InhtcC5paWQ6OENDRjNBN0E2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiIHhtcE1NOkRvY3VtZW50SUQ9InhtcC5kaWQ6OENDRjNBN0I2NTZBMTFFMEI3QjRBODM4NzJDMjlGNDgiPiA8eG1wTU06RGVyaXZlZEZyb20gc3RSZWY6aW5zdGFuY2VJRD0ieG1wLmlpZDo4Q0NGM0E3ODY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIgc3RSZWY6ZG9jdW1lbnRJRD0ieG1wLmRpZDo4Q0NGM0E3OTY1NkExMUUwQjdCNEE4Mzg3MkMyOUY0OCIvPiA8L3JkZjpEZXNjcmlwdGlvbj4gPC9yZGY6UkRGPiA8L3g6eG1wbWV0YT4gPD94cGFja2V0IGVuZD0iciI/PqqezsUAAAAfSURBVHjaYmRABcYwBiM2QSA4y4hNEKYDQxAEAAIMAHNGAzhkPOlYAAAAAElFTkSuQmCC")}
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="markup">
+        <article id="content" class="markdown-body">
+          <h1>My Sublime Plugin</h1>
+<blockquote>
+<p>Sublime Text is a sophisticated text editor for code, markup and prose.You'll love the slick user interface,</br>
+extraordinary features and amazing performance.<a href="http://www.sublimetext.com/">Download Link</a></br></p>
+</blockquote>
+<h2>插件的功能</h2>
+<blockquote>
+<p>本插件的初步实现的功能：帮助整理代码模块，以及在编写代码时使用整理好的模块完成快速开发以及模块插入的功能。</br>
+未来带升级的功能有：添加代码框架，通过命令完成一个框架的自动生成，类似于node中的express框架生成等。自定义</br>
+编译过程结合gyp完成工程文件生成以及自动编译。结合其他Python功能扩展sublime。</br>
+制作sublme 插件的目的在于：</br></p>
+<ul>
+<li>扩展编辑器使编辑器功能更强大  </br></li>
+<li>方便工作，提高效率。</br></li>
+<li>进一步学习Python</li>
+</ul>
+</blockquote>
+<h2>插件开发过程</h2>
+<h3>Hello World</h3>
+<blockquote>
+<p>首先根据sublime官网和其他网站写了一个hello world，插件框架，通过命令行加入运行<a href="http://code.tutsplus.com/tutorials/how-to-create-a-sublime-text-2-plugin--net-22685">官网示例</a>，其生成的代码如下：</br></p>
+</blockquote>
+<div class="codehilite"><pre>import sublime, sublime_plugin
+
+class ExampleCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        self.view.insert(edit, 0, &quot;Hello, World!&quot;)
+</pre></div>
+
+
+<blockquote>
+<p>其主要功能是在编辑器开头插入Hello world。</p>
+</blockquote>
+<h3>修改插入位置</h3>
+<blockquote>
+<p>通过获取select的长度完成在select两端插入特定字符，这是通过查阅github上的代码后得出的，相关代码如下：</br></p>
+</blockquote>
+<div class="codehilite"><pre>import sublime, sublime_plugin
+
+class ExampleCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        mytext = [];
+        exprs = [];
+        for region in reversed(self.view.sel()):
+            # Do the replacement in reverse order, so the character offsets
+            # don&#39;t get invalidated
+            exprs.append((region, self.view.substr(region)))
+            mytext.append(self.view.substr(region))
+        mark=self.view.sel()[0]#get the line, a is the begin B is the end
+        stringget = self.view.substr(mark.b);
+        region = self.view.sel()[0].a;#get the position of cursor
+        self.view.insert(edit, mark.b, str(mytext) );
+</pre></div>
+
+
+<blockquote>
+<p>在开发过程中开始时使用了Python读写文件的方式来记录debug过程中的log，通过代码files = open("c://test.txt","w");</br>
+打开文件然后写入debug数据：files.write(testv[0]);最后关闭文件files.close();后来查看Python插件后发现可以使用</br>
+sublime 自带的提示工具完成如：使用sublime.message_dialog( "Write File Success");弹出dialog对话框，以及使用</br>
+sublime.status_message("copy to backfile success");将信息写入sublime状态bar里面。</br></p>
+</blockquote>
+<h3>添加快捷键</h3>
+<blockquote>
+<p>根据各开源插件以及相关文章发现在Default (XXX).sublime-keymap中可以添加快捷键(xxx为相关平台，Windows Linux OSX)</br>
+通过快捷键调用插件完成相关功能为了方便使用，以及考虑到键盘中键的距离的本文档定义的快捷键为：alt+z，复制选取的</br>
+文本到模板josn文件，alt+x，整理模板josn文件到对应的completion文件。为了方便调试定义了其他的快捷方式用于测试主</br>
+要有:ctrl+alt+y和ctrl+alt+t，Default(Windows).sublime-keymap代码如下：</br></p>
+</blockquote>
+<div class="codehilite"><pre>[  
+    {   &quot;keys&quot;: [&quot;ctrl+alt+t&quot;], &quot;command&quot;: &quot;firstp&quot;     } ,
+    {   &quot;keys&quot;: [&quot;alt+z&quot;], &quot;command&quot;: &quot;backup&quot; } ,
+    {   &quot;keys&quot;: [&quot;alt+x&quot;], &quot;command&quot;: &quot;completions&quot; } ,
+    {   &quot;keys&quot;: [&quot;ctrl+alt+y&quot;], &quot;command&quot;: &quot;test&quot;       } 
+] 
+</pre></div>
+
+
+<h3>在Preferences菜单中添加插件选项</h3>
+<blockquote>
+<p>创建Main.sublime-menu 文件，然后向里面写入如下设置:</p>
+</blockquote>
+<div class="codehilite"><pre>[
+    {
+        &quot;caption&quot;: &quot;Preferences&quot;,
+        &quot;mnemonic&quot;: &quot;n&quot;,
+        &quot;id&quot;: &quot;preferences&quot;,
+        &quot;children&quot;:
+        [
+            {
+                &quot;caption&quot;: &quot;Package Settings&quot;,
+                &quot;mnemonic&quot;: &quot;P&quot;,
+                &quot;id&quot;: &quot;package-settings&quot;,
+                &quot;children&quot;:
+                [
+                    {
+                        &quot;caption&quot;: &quot;xxx&quot;,
+                        &quot;children&quot;:
+                        [
+                            { &quot;command&quot;: &quot;open_file&quot;, &quot;args&quot;: {&quot;file&quot;: &quot;${packages}/xxx/xxx.sublime-settings&quot;}, &quot;caption&quot;: &quot;Settings – Default&quot; },
+                            { &quot;command&quot;: &quot;open_file&quot;, &quot;args&quot;: {&quot;file&quot;: &quot;${packages}/Usxxxer/xxx.sublime-settings&quot;}, &quot;caption&quot;: &quot;Settings – User&quot; },
+                            { &quot;caption&quot;: &quot;-&quot; }
+                        ]
+                    }
+                ]
+            }
+        ]
+    }
+]
+</pre></div>
+
+
+<h3>在右键菜单中添加插件选项</h3>
+<blockquote>
+<p>创建Context.sublime-menu然后向里面写入如下设置:</p>
+</blockquote>
+<div class="codehilite"><pre>[
+   { &quot;caption&quot;: &quot;-&quot; },
+   { &quot;caption&quot;: &quot;Copy Selected&quot;, &quot;command&quot;: &quot;test&quot; },
+   { &quot;caption&quot;: &quot;Save To Backup File&quot;, &quot;command&quot;: &quot;backup&quot; },
+   { &quot;caption&quot;: &quot;FirstP Test&quot;, &quot;command&quot;: &quot;firstp&quot; },
+   { &quot;caption&quot;: &quot;Completions File Save&quot;, &quot;command&quot;: &quot;completions&quot; },
+   { &quot;caption&quot;: &quot;FirstP with Previous&quot;, &quot;command&quot;: &quot;firstp&quot; },
+   { &quot;caption&quot;: &quot;Open File Test&quot;,&quot;command&quot;:&quot;open_file&quot;,&quot;args&quot;:{&quot;file&quot;: &quot;${packages}/TestDir/test.txt&quot;}},
+   { &quot;caption&quot;: &quot;-&quot; }
+]
+</pre></div>
+
+
+<blockquote>
+<p>command后面为插件的模块名称，右键设置后的结果如下图所示。</br>
+<img alt="" src="data:image/x-png;base64,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"></p>
+</blockquote>
+<h3>Comletiongs介绍</h3>
+<blockquote>
+<p>Completions provide an IDE-like functionality to insert dynamic content through the </br>
+completions list or by pressing Tab.<a href="http://sublimetext.info/docs/en/reference/completions.html">Here is the Reference Link</a></br></p>
+</blockquote>
+<ul>
+<li>completion format<blockquote>
+<p>Completions are JSON files with the .sublime-completions extension. The content of the</br> 
+completion file like below</br></p>
+</blockquote>
+</li>
+</ul>
+<div class="codehilite"><pre>{
+        &quot;scope&quot;: &quot;text.html - source - meta.tag, punctuation.definition.tag.begin&quot;,
+
+        &quot;completions&quot;:
+        [
+                { &quot;trigger&quot;: &quot;a&quot;, &quot;contents&quot;: &quot;&lt;a href=\&quot;$1\&quot;&gt;$0&lt;/a&gt;&quot; },
+                { &quot;trigger&quot;: &quot;abbr&quot;, &quot;contents&quot;: &quot;&lt;abbr&gt;$0&lt;/abbr&gt;&quot; },
+                { &quot;trigger&quot;: &quot;acronym&quot;, &quot;contents&quot;: &quot;&lt;acronym&gt;$0&lt;/acronym&gt;&quot; }
+
+        ]
+}
+</pre></div>
+
+
+<p>*completions参考链接</p>
+<blockquote>
+<p><a href="http://sublimetext.info/docs/en/extensibility/completions.html">sublime competions</a>
+<a href="http://sublimetext.info/docs/en/reference/completions.html">sublime extention completions</a></p>
+</blockquote>
+<h3>插件第一版</h3>
+<blockquote>
+<p>首先获取选中字符串，然后写入programdata下sublimeBackUp文件夹sublime_backup.bk文件中</br></p>
+</blockquote>
+<div class="codehilite"><pre>import sublime, sublime_plugin, json
+import os
+
+class BackupCommand(sublime_plugin.TextCommand):
+
+    def run(self, edit):
+        mytext = [];
+        for region in reversed(self.view.sel()):
+            mytext.append(self.view.substr(region))
+
+        filepath = os.getenv(&#39;PROGRAMDATA&#39;);
+        filepath += &quot;/SublimeBackUp&quot;;
+        # if not os.path.exists(filepath):
+        #   os.mkdir(filepath);
+
+        filepath += &quot;/sublime_backup.bk&quot;;
+
+        savefile = open(filepath,&quot;a&quot;);
+        for c in mytext:
+            if c==&quot;\&quot;&quot;:
+                savefile.write(&quot;\\&quot;);
+            savefile.write(c);
+        savefile.close();
+
+    def checkPath(self):
+        filepath = os.getenv(&#39;PROGRAMDATA&#39;);
+        filepath += &quot;/SublimeBackUp&quot;;
+        if(not os.path.exists(filepath)):
+            os.mkdir(filepath);
+        return filepath;
+    pass
+    def getFilePath(self):
+        filepath = self.checkPath();
+        filepath += &quot;/sublime_backup.bk&quot;;
+        return filepath;
+    pass
+
+pass
+</pre></div>
+
+
+<blockquote>
+<p>这一版的代码只是负责写文件操作，不涉及到其他相关功能。</p>
+</blockquote>
+<h3>第二版</h3>
+<blockquote>
+<p>第二版加入了Json格式的读写以及状态条提示,这一版完成了模块提取并写入到json文件以及通过快捷方式导出模块到</br>
+completion文件的功能,其代码如下，</p>
+</blockquote>
+<div class="codehilite"><pre>import sublime, sublime_plugin, json
+import os
+
+
+class CompletionsCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        #sublime.message_dialog(&quot;test&quot;);
+        self.ClarifyTest();
+
+    def ClarifyTest(self):
+        filepath = os.getenv(&#39;APPDATA&#39;);
+        filepath += &quot;/SublimeBackUp&quot;;
+        fileName = os.path.abspath(filepath) + &quot;/description.json&quot;;
+        #sublime.message_dialog(fileName);
+
+        saveFile ={};
+        saveFile =json.load(open(fileName,&quot;r&quot;));
+
+        #sublime.message_dialog(str(saveFile));
+        if(len(saveFile) != 0):
+            for k in saveFile:
+                #sublime.message_dialog(saveFile[k]);
+                self.LoadToFile(saveFile[k]);
+        sublime.message_dialog(&quot;save completions success&quot;);
+        pass
+    def GetPath(self):
+        filepath = os.getenv(&#39;APPDATA&#39;);
+        filepath += &quot;/SublimeBackUp&quot;;
+        return filepath;
+
+    def CheckSaveFileExist(self,filename):
+        #sublime.message_dialog(self.GetPath()+&quot;/&quot;+filename);
+        if(os.path.exists( self.GetPath()+&quot;/&quot;+filename)):
+            #sublime.message_dialog(filename + &quot;have such file&quot;)
+            return True;
+        else:
+            #sublime.message_dialog(filename + &quot;no such file&quot;)
+            return False;
+        pass
+
+
+    def LoadFileJsonData(self,filename):
+        jsonData ={};
+        if(os.path.exists(filename)):
+            jsonData =json.load(open(filename,&quot;r&quot;));
+        return jsonData;
+
+        pass
+
+    def LoadToFile(self,fileName):
+
+        getname = fileName.split(&quot;.&quot;)[0];
+        savedName = &quot;sbc-api-&quot; + getname+&quot;.sublime-settings&quot;;
+        jsonData = {};
+        fileData = {};
+        if( self.CheckSaveFileExist(fileName)):
+            fileData =  self.LoadFileJsonData( self.GetPath()+&quot;/&quot;+fileName);
+
+            pass
+        else:
+            #sublime.message_dialog(fileName + &quot;no such file&quot;);
+            return;
+        if(len(fileData) == 0):
+            return;
+        if( self.CheckSaveFileExist(savedName)):
+            jsonData = self.LoadFileJsonData( self.GetPath()+&quot;/&quot;+savedName);
+        if(len(fileData) == 1):
+            #print(len(fileData));
+            #print(str(fileData));
+            writebacklist = [];
+            content = fileData[&quot;completions&quot;][&quot;content&quot;];
+            writebacklist.append(fileData[&quot;completions&quot;][&quot;key&quot;]+&quot;\t&quot;+getname);
+            writebacklist.append(content);
+            if(len(jsonData) == 0):
+                jsonData[&quot;completions&quot;] = writebacklist;
+            else:
+                jsonData[&quot;completions&quot;].append(writebacklist);
+        else:
+            for temp in fileData[&quot;completions&quot;] :
+                print (&quot;tem is &quot;+str(temp));
+                writebacklist = [];
+                writebacklist.append(temp[&quot;key&quot;]+&quot;\t&quot;+getname);
+                writebacklist.append(temp[&quot;content&quot;]);
+                jsonData[&quot;completions&quot;].append(writebacklist);
+                pass
+            pass
+        json.dump(jsonData,open(self.GetPath()+&quot;/&quot;+savedName,&quot;w&quot;));
+        os.remove(self.GetPath()+&quot;/&quot;+fileName);
+    pass
+pass
+
+
+
+class BackupCommand(sublime_plugin.TextCommand):
+    Description = {&quot;c&quot;:&quot;MyC Block&quot;,&quot;cpp&quot;:&quot;MyCpp Block&quot;,&quot;cs&quot;:&quot;MyCsharp Block&quot;,&quot;css&quot;:&quot;MyCSS Block&quot;,&quot;js&quot;:&quot;MyJS Block&quot;,&quot;html&quot;:&quot;MyHtml Block&quot;,&quot;py&quot;:&quot;MyPython Block&quot;};
+    SaveFile = {&quot;c&quot;:&quot;MyC.json&quot;,&quot;cpp&quot;:&quot;MyCpp.json&quot;,&quot;cs&quot;:&quot;MyCsharp.json&quot;,&quot;css&quot;:&quot;MyCSS.json&quot;,&quot;js&quot;:&quot;MyJS.json&quot;,&quot;html&quot;:&quot;MyHtml.json&quot;,&quot;py&quot;:&quot;MyPython.json&quot;};
+
+    def run(self, edit):
+        mytext = [];
+        for region in reversed(self.view.sel()):
+            mytext.append(self.view.substr(region).replace(&quot;\&quot;&quot;,&quot;\&quot;&quot;));
+        #self.forTest(mytext);
+        self.WriteContents(mytext);
+
+
+    def checkPath(self):
+        filepath = os.getenv(&#39;APPDATA&#39;);
+        filepath += &quot;/SublimeBackUp&quot;;
+        if(not os.path.exists(filepath)):
+            os.mkdir(filepath);
+        return os.path.abspath(filepath);
+    pass
+    def getFilePath(self):
+        filepath = self.checkPath();
+        filepath += &quot;/sublime_backup.bk&quot;;
+        return filepath;
+    pass
+
+
+    def GetCurrentFileName(self):
+        fileName = (self.view.file_name()).split(&quot;\\&quot;)[-1];
+        return fileName;
+        pass
+
+    def GetDescription(self,Description,fileName):
+        pre = fileName.split(&quot;.&quot;)[-1];
+        if(Description[pre] != None):
+            return Description[pre];
+        else:
+            return &quot;UnKown&quot;;
+        pass
+    def GetSaveName(self,SaveFile,fileName):
+        pre = fileName.split(&quot;.&quot;)[-1];
+        if(SaveFile[pre] != None):
+            return SaveFile[pre];
+        else:
+            return &quot;UnKown&quot;;
+        pass
+
+    def WriteToJsonFile(self,key,mytext):
+        fileName = self.GetCurrentFileName();
+        MyDescription = self.GetDescription(self.Description,fileName);
+        #sublime.message_dialog(MyDescription);
+        if(MyDescription != &quot;UnKown&quot;):
+            saveFileName = self.checkPath() + &quot;/&quot; +self.GetSaveName(self.SaveFile,fileName);
+            #sublime.message_dialog(saveFileName);
+            writeback = {};
+            writeback[&quot;filepath&quot;] = self.view.file_name();
+            writeback[&quot;filename&quot;] = fileName;
+            writeback[&quot;content&quot;]  = mytext[0];
+            writeback[&quot;key&quot;]      = key;
+
+            if(os.path.exists(saveFileName)):
+                jsoncontent = json.load(open(saveFileName,&quot;r&quot;));
+                jsoncontent[&quot;completions&quot;].append(writeback);
+                json.dump(jsoncontent,open(saveFileName,&quot;w&quot;));
+                return;
+            else:
+                jsoncontent = {};
+                jsoncontent[&quot;completions&quot;] = writeback;
+                json.dump(jsoncontent,open(saveFileName,&quot;w&quot;));
+        pass
+
+    def WriteContents(self,mytext):
+        def on_done(name):
+            #mytext = [];
+            #for region in reversed(self.view.sel()):
+            #   mytext.append(self.view.substr(region))
+
+            #self.WriteKeyAndCompletcions(mytext,name);
+            self.WriteToJsonFile(name,mytext);
+            pass
+        def on_change(name):
+            return;
+            pass
+        def on_cancel():
+            return;
+        self.view.window().show_input_panel(&#39;please input key name&#39;,&#39;template&#39;,on_done,on_change,on_cancel);
+        pass
+
+pass
+</pre></div>
+
+
+<h3>第三版</h3>
+<blockquote>
+<p>将相关代码提出到单独的模块，通过模块完成调用。</p>
+</blockquote>
+<div class="codehilite"><pre>import sublime, sublime_plugin, json
+import os
+import sys
+#import CompletionsFileSave
+
+__file__ = os.path.normpath(os.path.abspath(__file__))
+__path__ = os.path.dirname(__file__)
+
+libs_path = os.path.join(__path__, &#39;libs&#39;)
+if libs_path not in sys.path:
+    sys.path.insert(0, libs_path)
+
+from testt import*
+from savecompletionsfile import*
+from writefiletoJson import*
+
+
+class CompletionsCommand(sublime_plugin.TextCommand):
+    def run(self, edit):
+        #sublime.message_dialog(&quot;test&quot;);
+        completions = SaveCompletionsFile()
+        completions.ClarifyTest();
+        sublime.message_dialog(&quot;Write File Success&quot;);
+
+pass
+
+class BackupCommand(sublime_plugin.TextCommand):
+
+    def run(self, edit):
+        mytext = [];
+        for region in reversed(self.view.sel()):
+            mytext.append(self.view.substr(region).replace(&quot;\&quot;&quot;,&quot;\&quot;&quot;));
+        self.WriteContents(mytext);
+
+
+    def WriteContents(self,mytext):
+        def on_done(name):
+            file_name = self.view.file_name();
+            BlockJson = WriteFileToJson(file_name);
+            v = BlockJson.WriteToJsonFile(name,mytext);
+            sublime.message_dialog(v);
+
+            sublime.status_message(&quot;copy to backfile success&quot;);
+            #sublime.message_dialog(name);
+            pass
+        def on_change(name):
+            return;
+            pass
+        def on_cancel():
+            return;
+        self.view.window().show_input_panel(&#39;please input key name&#39;,&#39;template&#39;,on_done,on_change,on_cancel);
+        pass
+
+pass
+</pre></div>
+
+
+<h3>加入completion模板支持功能</h3>
+<blockquote>
+<p>completions 模板的具体说明请参考sublime官网相关文档，加入的相关代码如下：</br></p>
+</blockquote>
+<div class="codehilite"><pre># In Sublime Text 3 things are loaded async, using plugin_loaded() callback before try accessing.
+pleasurazy = PleasurazyAPICompletionsPackage()
+
+if int(sublime.version()) &lt; 3000:
+    pleasurazy.init()
+else:
+    def plugin_loaded():
+        global pleasurazy
+        pleasurazy.init()
+
+
+class PleasurazyAPICompletionsPackageEventListener(sublime_plugin.EventListener):
+    global pleasurazy
+
+    def on_query_completions(self, view, prefix, locations):
+        self.completions = []
+
+        for API_Keyword in pleasurazy.api:
+        # If completion active
+            if (pleasurazy.API_Setup and pleasurazy.API_Setup.get(API_Keyword)) or (pleasurazy.settings.get(&#39;completion_active_extend_list&#39;) and pleasurazy.settings.get(&#39;completion_active_extend_list&#39;).get(API_Keyword)):
+                scope = pleasurazy.api[API_Keyword].get(&#39;scope&#39;)
+                if scope and view.match_selector(locations[0], scope):
+                    self.completions += pleasurazy.api[API_Keyword].get(&#39;completions&#39;)
+
+        if not self.completions:
+            return []
+
+        # extend word-completions to auto-completions
+        compDefault = [view.extract_completions(prefix)]
+        compDefault = [(item, item) for sublist in compDefault for item in sublist if len(item) &gt; 3]
+        compDefault = list(set(compDefault))
+        completions = list(self.completions)
+        completions = [tuple(attr) for attr in self.completions]
+        completions.extend(compDefault)
+        return (completions)
+</pre></div>
+
+
+<h2>说明</h2>
+<blockquote>
+<p>本文档主要是对制作自己的sublime插件的总结，用文档记录下这个插件的开发过程以免忘记。其中参考了部分Github上的开</br>
+源sublime插件，在此向<a href="https://github.com/Pleasurazy/Sublime-Better-Completion/blob/master/Install_instructions.md">Sublime Better Completion Package</a>以及<a href="https://github.com/SublimeCodeIntel/SublimeCodeIntel">sublime 插件SublimeCodeIntel</a>等作者致敬。这是本人第一次</br>
+使用Python制作sublime插件而且本插件刚刚制作不久，相关代码还没有refine，如有纰漏请勿见笑。本插件暂时还没开源，</br>
+因为代码没有refine好，以后开源了在把下载链接放上去。</br></p>
+</blockquote>
+<h2>参考</h2>
+<ul>
+<li><a href="http://www.cnblogs.com/good-temper/p/3871304.html">sublime插件开发简单模板</a></br></li>
+<li><a href="http://www.sublimetext.com/docs/2/api_reference.html">sublime2 API</a></br></li>
+<li><a href="http://www.sublimetext.com/docs/3/api_reference.html">sublime3 API</a></br></li>
+<li><a href="http://www.jianshu.com/p/3cb5c6f2421c">如何优雅使用sublime</a></br></li>
+<li><a href="http://blog.csdn.net/xfxyy_sxfancy/article/details/18627147">sublime插件开发</a></br></li>
+<li><a href="http://blog.csdn.net/zhuboyan123/article/details/41249685">sublimetext写插件实现复制当前文件的文件名到剪贴板和列出所有的文件名</a></br></li>
+<li><a href="https://github.com/Pephers/Super-Calculator">sublime 插件Super-Calculator-master</a></br></li>
+<li><a href="https://github.com/">sublime 插件FileDiffs Plugin</a></br></li>
+<li><a href="https://github.com/Pleasurazy/Sublime-Better-Completion/blob/master/Install_instructions.md">sublime 插件Sublime Better Completion Package</a></br></li>
+<li><a href="https://github.com/SublimeCodeIntel/SublimeCodeIntel">sublime 插件SublimeCodeIntel</a></br></li>
+</ul>
+        </article>
+      </div>
+    </div>
+  </body>
+</html>
